@@ -11,10 +11,21 @@ Your task is to accomplish the following:
     - A heartbeat is a periodic message used to tell the backend that the sensor is online and provide the current state of the sensor
     - It is left as an exercise to the candidate to define exactly what data is stored (as well as how it is stored) for a sensor and a heartbeat 
 - Expose an endpoint that can receive "heartbeats" indicating that the sensor is alive and checking in
-- Deliver a webpage where a user can view live, updating heartbeats from the sensors
+- Deliver a webpage where a user can view live, updating heartbeats from the sensors.  
 - Deliver a script that can emulate one or many sensors by sending emulated heartbeats to the "heartbeats" endpoint.
 
 Bonus Points: Build or tell us how you would include a way to alert users if a sensor hasn’t sent a heartbeat in the last 10 minutes.
+
+## IoT Fullstack Position
+If you are applying for the IoT fullstack position, please follow the assignment above with the following modifications:
+
+* The sensor emulation script should be written in modern C++ using libcurl.
+* It is not required to use a front-end framework such as react for the UI.  Viewing live heartbeats can be server side rendered HTML tables or whatever is simplest for you.  A page refresh is perfectly acceptable to view updates of live heartbeats.  We do not expect ajax or websockets to be used.
+
+## Backend Only Position
+If you are applying for a backend only position, please follow the assignment above with the following modifications:
+
+* It is not required to use a front-end framework such as react for the UI.  Viewing live heartbeats can be server side rendered HTML tables or whatever is simplest for you.  A page refresh is perfectly acceptable to view updates of live heartbeats.  We do not expect ajax or websockets to be used.
 
 ## Don't Let the Dog Eat Your Homework
 Our goal is to understand your thought process, documentation style, and to get a sense of how you reason about a complex system. Please don't spend more than 3-4 hours on this. We'd prefer incomplete work with notes on what you focused on, where you left off, and the limitations of your solution.
