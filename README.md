@@ -5,22 +5,21 @@ Your goal is to build a web application that displays the latest "heartbeat" fro
 
 ## Assignment
 Your task is to accomplish the following:
-- Use Django (or some similar Python web framework) to build a web application
-- Scaffold a database that includes sensors and heartbeats
+- We use Golang, Typescript, Rust, and Python (with the associated frameworks). We would prefer you to choose from one of these, but if you strongly prefer other languages please ensure that the project is well documented and can be run on someone else's machine.
+- Use your language of choice to build a web application
+- Scaffold a database that includes sensors (think Density Open Area and Entry sensors) and heartbeats
     - A sensor is a device in the field.  It generally includes a serial number and other metadata
     - A heartbeat is a periodic message used to tell the backend that the sensor is online and provide the current state of the sensor
     - It is left as an exercise to the candidate to define exactly what data is stored (as well as how it is stored) for a sensor and a heartbeat 
 - Expose an endpoint that can receive "heartbeats" indicating that the sensor is alive and checking in
-- Deliver a webpage where a user can view live, updating heartbeats from the sensors.  
-- Deliver a script that can emulate one or many sensors by sending emulated heartbeats to the "heartbeats" endpoint.
+- Deliver a webpage where a user can view live, updating heartbeats from the sensors. 
 
 Bonus Points: Build or tell us how you would include a way to alert users if a sensor hasn’t sent a heartbeat in the last 10 minutes.
 
-## IoT Fullstack Position
-If you are applying for the IoT fullstack position, please follow the assignment above with the following modifications:
+## Fullstack Position
+If you are applying for the Fullstack position, please follow the assignment above with the following modifications:
 
-* The sensor emulation script should be written in modern C++ using libcurl.
-* It is not required to use a front-end framework such as react for the UI.  Viewing live heartbeats can be server side rendered HTML tables or whatever is simplest for you.  A page refresh is perfectly acceptable to view updates of live heartbeats.  We do not expect ajax or websockets to be used.
+* Use a frontend framework like React for the UI (or vanilla js if you prefer), ideally make the page realtime
 
 ## Backend Only Position
 If you are applying for a backend only position, please follow the assignment above with the following modifications:
